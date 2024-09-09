@@ -14,19 +14,16 @@ if ('serviceWorker' in navigator) {
 // Função para verificar e solicitar permissão de notificações
 function verificarPermissaoNotificacao(registration) {
   const opcoes = {
-    body: "Esta é uma notificação personalizada. Clique para abrir uma página!",
-    icon: "https://via.placeholder.com/100",
-    requireInteraction: true,
-    actions: [
-      {action: 'abrir', title: 'Abrir Página'},
-      {action: 'fechar', title: 'Fechar'}
-    ]
+    body: " Valor MZN 1000,00",
+    icon: "https://raw.githubusercontent.com/VOIDabinerJR/VOIDpayWebMVP2/main/img/logo.ico", // Um ícone placeholder
+    requireInteraction: true, // Fica na tela até que o usuário interaja
+    
   };
 
   if ("Notification" in window) {
     if (Notification.permission === "granted") {
       console.log("Permissão concedida, enviando notificação...");
-      registration.showNotification("Notificação", opcoes);
+      registration.showNotification("Venda Aprovada!", opcoes);
     } else if (Notification.permission !== "denied") {
       Notification.requestPermission().then(function(permission) {
         if (permission === "granted") {
