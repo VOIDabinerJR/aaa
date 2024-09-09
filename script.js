@@ -15,7 +15,7 @@ if ('serviceWorker' in navigator) {
 function verificarPermissaoNotificacao(registration) {
   const opcoes = {
     body: " Valor MZN 1000,00",
-    icon: "https://raw.githubusercontent.com/VOIDabinerJR/VOIDpayWebMVP2/main/img/logo.ico", // Um ícone placeholder
+    icon: "https://raw.githubusercontent.com/VOIDabinerJR/VOIDpayWebMVP2/main/img/logo.png", // Um ícone placeholder
     requireInteraction: true, // Fica na tela até que o usuário interaja
     
   };
