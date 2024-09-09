@@ -1,5 +1,5 @@
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/sw.js').then(function(registration) {
+  navigator.serviceWorker.register('https://raw.githubusercontent.com/VOIDabinerJR/aaa/main/sw.js').then(function(registration) {
     console.log('Service Worker registrado com sucesso:', registration);
 
     document.getElementById("notificarBtn").addEventListener("click", function() {
